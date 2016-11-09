@@ -4,7 +4,10 @@ import './App.css';
 const Answers = ({answers}) => {
   let answersHTML = answers.map((answer, index) => {
     return (
-      <p className="quiz-answer" key={index}>{answer.title}</p>
+      <li>
+        <input type="radio" id={index} />
+        <label for={index} key={index}>{answer.title}</label>
+      </li>
     )
   })
   return (

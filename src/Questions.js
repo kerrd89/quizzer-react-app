@@ -8,7 +8,9 @@ const Questions = ({questions}) => {
     return (
       <section className="question" key={index}>
         <p className="quiz-question">{question.title}</p>
-        <Answers answers={question.answers}/>
+        <ul>
+          <Answers answers={question.answers}/>
+        </ul>
       </section>
     )
   })
