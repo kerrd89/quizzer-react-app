@@ -5,7 +5,7 @@ const Answers = ({answers}) => {
   let answersHTML = answers.map((answer, index) => {
     return (
       <li>
-        <input type="radio" id={index} />
+        <input type="radio" id={index} name={'answer-group-'+index} />
         <label for={index} key={index}>{answer.title}</label>
       </li>
     )
